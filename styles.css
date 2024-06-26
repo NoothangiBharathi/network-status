@@ -1,0 +1,97 @@
+ @import url('https://fonts.googleapis.com/css2?family=poppins:wght@500&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins" , sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    background: #222;
+}
+.box{
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border-radius: 10px;
+    z-index: -1;
+}
+.box.offline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -8px;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+.box .icon{
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: green;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.box .icon.offline {
+    position: absolute;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ccc;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+
+
+
+
+
+.box .icon i{
+    font-size: 2.5em;
+    color: #fff;
+
+}
+.box .text span{
+    font-size: 20px;
+}
+.box .text p{
+    font-size: 15px;
+    font-weight: 500;
+    counter-reset: #000000b3;
+}
